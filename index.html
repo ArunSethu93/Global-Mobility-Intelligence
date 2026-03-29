@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Global Mobility Intelligence // SYS.MAP</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <script src="https://d3js.org/d3.v7.min.js"></script>
+  <script src="https://unpkg.com/topojson-client@3"></script>
+</head>
+<body>
+
+  <div id="layout">
+    <div id="sidebar">
+      <div class="brand">SYS.MOBILITY // <span id="rank-badge">---</span></div>
+      
+      <div class="sb-section">
+        <div class="sect-lbl">TARGET SEARCH</div>
+        <div class="search-wrap">
+          <input type="text" id="csearch" placeholder="LOCATE COORDINATES..." autocomplete="off">
+          <div id="search-results" class="results-pop"></div>
+        </div>
+      </div>
+
+      <div class="sb-section">
+        <div class="sect-lbl">ORIGIN PASSPORT</div>
+        <select id="csel"></select>
+      </div>
+
+      <div id="pcard">
+        </div>
+
+      <div id="pbars">
+        </div>
+
+      <button id="reset-btn">RESET VIEWPORT</button>
+    </div>
+
+    <div id="map-wrap">
+      <div id="loading">ESTABLISHING UPLINK...</div>
+      <svg id="mapsvg"></svg>
+      
+      <div id="tt">
+        <div id="tt-name"></div>
+        <div id="tt-stat"></div>
+      </div>
+    </div>
+  </div>
+
+  <div id="reticle"></div>
+
+  <script src="data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
