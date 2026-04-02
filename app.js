@@ -50,7 +50,9 @@ function renderCard() {
       <div><div class="pc-name">${p.name}</div><div class="pc-rank">GLOBAL RANK #${p.rank}</div></div>
     </div>
     <div class="stats">
-      <div class="stat"><div class="stat-val sv-g">${p.s.vf}</div><div class="sect-lbl">VF</div></div>
+      <div class="stat">
+      <div class="stat-val sv-g">${p.s.vf}</div>
+      <div class="sect-lbl">VF</div></div>
       <div class="stat"><div class="stat-val sv-a">${p.s.voa}</div><div class="sect-lbl">VOA</div></div>
     </div>`;
 
