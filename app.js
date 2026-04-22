@@ -4,7 +4,7 @@ let worldData = null;
 let cmap = {};
 let svgEl, proj, path, gCountries, gPaths, zoom;
 
-// ── Build Data Mapping ────────────────────────────────────────────────────────
+
 function buildMap() {
   cmap = {};
   const p = P[sel];
